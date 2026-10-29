@@ -1,0 +1,8 @@
+running outdoor "Hill repeats"
+
+warmup 15min
+8x {
+  90s @ zone 4 "Up"
+  recover 2min "Jog down"
+}
+cooldown 15min

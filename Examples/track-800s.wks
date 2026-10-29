@@ -1,0 +1,11 @@
+# Six 800s on the track, a lap easy between each.
+running outdoor "Track 800s"
+
+warmup 15min @ zone 2
+
+6x {
+  800m @ 3:50-4:00/km "800"
+  recover 400m
+}
+
+cooldown 10min

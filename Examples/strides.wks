@@ -1,0 +1,8 @@
+# Strides after an easy run: the watch counts them, you decide when each one ends.
+running outdoor "Easy + strides"
+
+30min @ 140-150bpm
+6x {
+  20s @ 180-190spm "Stride"
+  recover open
+}

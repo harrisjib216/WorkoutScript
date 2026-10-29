@@ -1,0 +1,11 @@
+# Three 12-minute efforts just under threshold, for a trainer.
+cycling indoor "Sweet spot 3x12"
+
+warmup 10min @ 150-180W
+
+3x {
+  12min @ 250-265W
+  recover 5min @ 150W
+}
+
+cooldown 10min

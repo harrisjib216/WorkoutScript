@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  macos:
+    name: macOS (WorkoutKit)
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test the package
+        run: swift test
+      - name: Check the examples
+        run: swift run workoutc check Examples/*.wks
+      - name: Build the iPhone app
+        run: xcodebuild -project App/WorkoutScript.xcodeproj -scheme WorkoutScript -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+
+  linux:
+    name: Linux (language only)
+    runs-on: ubuntu-latest
+    container: swift:6.0-jammy
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test the package
+        run: swift test
+      - name: Check the examples
+        run: swift run workoutc check Examples/*.wks
